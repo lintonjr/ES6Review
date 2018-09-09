@@ -1,7 +1,6 @@
-let color = new Set();
-color.add("red").add("green").add("red");
+var number = 123456.34;
+var En = new Intl.NumberFormat('en-US').format(number);
+var De = new Intl.NumberFormat('de-DE').format(number);
 
-if (color.size === 2 && color.has("red")) {
-    for (let key of color.values())
-        console.log(key)
-}
+console.log(En);
+console.log(De);
