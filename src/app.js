@@ -1,12 +1,12 @@
-// function test(valueA) {
-//     var valueB = arguments.length <= 1 || arguments[1] == undefined ? 4 : arguments[1];
-//     return valueA + valueB;
+var list = ["test", 34, {
+    name: "Linton"
+}];
+
+// for (var i in list) {
+//     console.log(i);
+//     console.log(list[i]);
 // }
 
-// console.log(test(2));
-
-function test(valueA, valueB = 4) {
-    return valueA + valueB;
+for (let i of list) {
+    console.log(i);
 }
-
-console.log(test(4));
