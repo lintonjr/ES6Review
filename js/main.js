@@ -1,12 +1,16 @@
 "use strict";
 
-// let name = "Linton";
-// let age = 29;
-// let text = "name: " + name + " age: " + age;
+// function test(valueA) {
+//     var valueB = arguments.length <= 1 || arguments[1] == undefined ? 4 : arguments[1];
+//     return valueA + valueB;
+// }
 
-// console.log(text);
+// console.log(test(2));
 
-var name = "Linton";
-var age = 29;
-var text = "\n        name: " + name + "\n        age: " + age + "\n    ";
-console.log(text);
+function test(valueA) {
+    var valueB = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 4;
+
+    return valueA + valueB;
+}
+
+console.log(test(4));
