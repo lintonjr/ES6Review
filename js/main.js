@@ -1,7 +1,7 @@
 "use strict";
 
-var US = new Intl.DateTimeFormat("en-US");
-var HUE = new Intl.DateTimeFormat("pt-BR");
+// console.log("Hello".indexOf("ello") === 1);
 
-console.log(US.format(new Date("2010-01-07")));
-console.log(HUE.format(new Date("2010-01-07")));
+console.log("hello".startsWith("ello", 1));
+console.log("hello".endsWith("hell", 3));
+console.log("hello".includes("el", 1));
