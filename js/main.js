@@ -1,10 +1,34 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+// var bob = {
+//     _name: "Bob",
+//     _friends: ["Guilherme", "Camilla", "Murillo"],
+//     printFriends: function printFiends() {
+//         // var self = this;
+//         this._friends.forEach(function(f) {
+//             return console.log(self._name + " knows " + f);
+//         });
+//     }
+// };
 
-var Client = function Client(name, email) {
-    _classCallCheck(this, Client);
+// bob.printFriends();
 
-    this.name = name;
-    this.email = email;
+
+//CONCEITO DE ARROW FUNCTIONS
+// var color = () => console.log("red");
+
+// color();
+
+var bob = {
+    _name: "Bob",
+    _friends: ["Guilherme", "Camilla", "Murillo"],
+    printFriends: function printFiends() {
+        var _this = this;
+
+        this._friends.forEach(function (f) {
+            return console.log(_this._name + " knows " + f);
+        });
+    }
 };
+
+bob.printFriends();
