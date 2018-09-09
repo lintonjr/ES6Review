@@ -1,14 +1,7 @@
 "use strict";
 
-var USD = new Intl.NumberFormat('en-US', {
-    style: "currency",
-    currency: "USD"
-});
+var US = new Intl.DateTimeFormat("en-US");
+var HUE = new Intl.DateTimeFormat("pt-BR");
 
-var BRL = new Intl.NumberFormat('pt-BR', {
-    style: "currency",
-    currency: "BRL"
-});
-
-console.log(USD.format(1910109291.40));
-console.log(BRL.format(1910109291.40));
+console.log(US.format(new Date("2010-01-07")));
+console.log(HUE.format(new Date("2010-01-07")));
